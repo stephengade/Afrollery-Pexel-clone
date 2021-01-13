@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+}
+
+$background-color: rgb(255, 255, 255);
+$text-color: white;
+$primary-color: rgb(255, 16, 255);
+$secondary-color: rgb(25, 16, 25);
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+    
+  }
+
+  $mobile: 480px;
+
+  @mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+  }
+
+  $tablet: 700px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+  }
